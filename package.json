@@ -1,0 +1,28 @@
+{
+  "name": "podcastapi",
+  "version": "1.0.0",
+  "description": "#### Features  - Listar os eps por categorias     - [saude, fitness, mentalidade, humor]  - Filtrar eps por nome do podcast",
+  "main": "index.js",
+  "scripts": {
+    "start:dev" : "tsx src/server.ts",
+    "start:watch" : "tsx watch src/server.ts",
+    "build" : "tsup src",
+    "start:dist" : "npm run build && node dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emanueldias01/PodcastAPI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emanueldias01/PodcastAPI/issues"
+  },
+  "homepage": "https://github.com/emanueldias01/PodcastAPI#readme",
+  "devDependencies": {
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}
