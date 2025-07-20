@@ -1,9 +1,16 @@
 import * as http from 'http'
+import { getListPodcasts } from './controllers/podcast-controller';
 
-const port = process.env.PORT;
+const PORT = process.env.PORT
 
-const server = http.createServer((req : http.IncomingMessage, res : http.ServerResponse) => {})
+const server = http.createServer(async (req : http.IncomingMessage, res : http.ServerResponse) => {
 
-server.listen(port, () => {
-    console.log(`Server running in port ${port}`);
+    if(req.method === "GET"){
+        await getListPodcasts(req, res);
+    }
+
 });
+
+server.listen(PORT, () => {
+    console.log(`Server running in port ${PORT}`)
+})
