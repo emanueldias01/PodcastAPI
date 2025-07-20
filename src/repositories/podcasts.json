@@ -10,6 +10,12 @@
             "episode" : "CBUM - Flow #319",
             "videoId" : "pQSuQmUfS30",
             "category" : ["saude", "bodybuilder"]
+        },
+        {
+            "podcastName" : "abc",
+            "episode" : "Xuxa",
+            "videoId" : "adasdasr",
+            "category" : ["musica", "humor"]
         }
 
     ]

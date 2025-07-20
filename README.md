@@ -28,3 +28,5 @@ Retorna um podcast com nome do podcast, nome do ep, imagem de capa e link
 
 ]
 ```
+
+Retornar pesquisa por filtro
